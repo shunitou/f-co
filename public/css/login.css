@@ -1,0 +1,136 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+
+.container {
+    width: 2000px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    height: 1000px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    border: black;
+    gap: 10px;  
+    width: 100%;  
+    border-radius: 25px;
+    margin-bottom: 20px;  
+}
+
+.container button:first-child {
+    background-color: #4568B2;
+    color: rgba(255, 255, 255, 0.925);
+    padding: 10px 200px;
+    border: black;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;  
+    gap: 5px;
+    margin-right: 50px;
+    border-radius: 25px;
+
+  }
+
+  .container button:last-child {
+    background-color: rgba(255, 255, 255, 0.041);
+    color: black;
+    padding: 10px 200px;
+    border: black;
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;  
+  }
+  
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px ;
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; 
+}
+
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9; 
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #589a00; 
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #589a00;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #95ac68;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tab {
+    padding: 10px 0;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.active-tab {
+    color: #589a00;
+    border-bottom: 2px solid #589a00;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
